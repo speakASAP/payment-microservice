@@ -5,7 +5,7 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as paypal from 'paypal-rest-sdk';
-import { LoggerService } from '../../../shared/logger/logger.service';
+import { LoggerService } from '../../../../shared/logger/logger.service';
 import {
   PaymentProvider,
   CreatePaymentRequest,

@@ -5,7 +5,7 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import Stripe from 'stripe';
-import { LoggerService } from '../../../shared/logger/logger.service';
+import { LoggerService } from '../../../../shared/logger/logger.service';
 import {
   PaymentProvider,
   CreatePaymentRequest,
@@ -24,7 +24,7 @@ export class StripeService implements PaymentProvider {
   ) {
     const secretKey = this.configService.get<string>('STRIPE_SECRET_KEY') || '';
     this.stripe = new Stripe(secretKey, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2023-10-16',
     });
   }
 

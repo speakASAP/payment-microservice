@@ -7,7 +7,7 @@ import { ConfigService } from '@nestjs/config';
 import { HttpService } from '@nestjs/axios';
 import { firstValueFrom } from 'rxjs';
 import * as crypto from 'crypto';
-import { LoggerService } from '../../../shared/logger/logger.service';
+import { LoggerService } from '../../../../shared/logger/logger.service';
 import {
   PaymentProvider,
   CreatePaymentRequest,
