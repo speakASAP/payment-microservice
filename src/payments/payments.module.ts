@@ -41,7 +41,7 @@ import { ComGateService } from './providers/comgate/comgate.service';
     ComGateProvider,
     ComGateService,
   ],
-  exports: [PaymentsService],
+  exports: [PaymentsService, PaymentProviderFactory],
 })
 export class PaymentsModule {}
 
